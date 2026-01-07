@@ -32,13 +32,13 @@ This is a REST API built using Node.js and Express.js for eCommerce. It provides
 #### User Authentication
 - `POST /auth/register` - Register a new user.
 - `POST /auth/login` -    Login with an existing user.
-- `GET /auth/logout` -    Logout the current user.
+- `GET /auth/me` -  Show current user.
+- `DELETE /auth/logout` -    Logout the current user.
 
 #### User
 - `GET /users` - Get all users.
 - `GET /users/:id` -    Get single user.
-- `GET /users/showMe` -  Show current user.
-- `PUT /users/updateUser` -  Update user profile.
+- `PUT /users/:id` -  Update user profile.
 
 #### Products
 - `GET /products` - Get all products.
@@ -51,5 +51,5 @@ This is a REST API built using Node.js and Express.js for eCommerce. It provides
 - `GET /orders` - Get all orders.
 - `POST /orders` -    Create a order .
 - `GET /orders/:id` -    Get a single order.
-- `PATCH /orders/:id` -   Update a order.
-- `GET /orders/showAllMyOrder` -   Get a current user orders.
+- `PUT /orders/:id` -   Update a order.
+
